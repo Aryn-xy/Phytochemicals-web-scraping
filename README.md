@@ -63,4 +63,4 @@ install.packages(c("rvest", "dplyr", "readxl", "writexl", "jsonlite", "httr"))
 
 
 
-This code represents a basic implementation of web scraping techniques using R to extract phytochemical data and evaluate key Lipinski’s rule properties, including SMILES, hydrogen bond acceptors, hydrogen bond donors, logP, and molecular weight. Developed as part of my final year project dissertation, the script is intentionally simple to demonstrate the fundamental concepts of data extraction and processing from web sources. As the code is basic, it can serves as a solid starting point for further enhancements and more advanced chemoinformatics analyses.
+This code represents a basic implementation of web scraping techniques using R to extract phytochemical data and evaluate key Lipinski’s rule properties, including SMILES, hydrogen bond acceptors, hydrogen bond donors, logP, and molecular weight. Developed as part of my final year project dissertation, the script is intentionally simple to demonstrate the fundamental concepts of data extraction and processing from web sources.
