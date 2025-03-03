@@ -50,7 +50,7 @@ install.packages(c("rvest", "dplyr", "readxl", "writexl", "jsonlite", "httr"))
 3. **Run the Script:**  
    Execute the R script. The script will loop through each phytochemical, scrape the necessary details, and save the combined results to an output file.
 
-##**Note:**  
+# Modify: 
 - The **base URL** to match the target website.
 - The **CSS selectors** (e.g., `.smiles`, `#lipinski-table`) to correctly target the desired elements.
 - The **property names** in the Lipinski table if they differ.
