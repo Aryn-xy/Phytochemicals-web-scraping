@@ -167,7 +167,7 @@ print(head(my_data))
 phytochemicals <- my_data$Phytochemical
 print(head(phytochemicals))
 
-# i encountered an issue where  from above code some smiles couldn't be extracted. so i tried another way.
+# i encountered an issue where  from the above code some smiles couldn't be extracted. so i tried another way.
 # Filter rows where SMILES is NA
 missing_smiles <- my_data[is.na(my_data$SMILES), ]
 
@@ -274,12 +274,11 @@ missing_df <- orig_df %>% filter(is.na(SMILES) | SMILES == "")
 
 cat("Number of compounds missing SMILES:", nrow(missing_df), "\n")
 
-# i could not scrap 212 SMILES from above code. so i did it manually & combined it with the original file.
 # Save the final merged dataset
 write_xlsx(merged_df, "phytochemicals_with_smiles_final_combined.xlsx")
 cat(" Final merged file saved as 'phytochemicals_with_smiles_final_combined.xlsx'.\n")
 
-# i edited the file name thats why i wrote "phytochemicals with smiles final combined.xlsx" instead of "phytochemicals_with_smiles_final_combined.xlsx" )
+# i changed the file name to "phytochemicals with smiles final combined.xlsx"
 df <- read_excel("phytochemicals with smiles final combined.xlsx")
 
 # this will check for duplicates in the "Phytochemical" column
