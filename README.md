@@ -59,8 +59,3 @@ install.packages(c("rvest", "dplyr", "readxl", "writexl", "jsonlite", "httr"))
 >   json_data <- fromJSON(content)
 >   ```
 - If you need to handle HTTP requests (for example, using API endpoints), the **httr** package can be helpful.
-
-
-
-
-This code represents a basic implementation of web scraping techniques using R to extract phytochemical data and evaluate key Lipinski’s rule properties, including SMILES, hydrogen bond acceptors, hydrogen bond donors, logP, and molecular weight. Developed as part of my final year project dissertation, the script is intentionally simple to demonstrate the fundamental concepts of data extraction and processing from web sources.
