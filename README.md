@@ -35,27 +35,3 @@ You can install these packages by running:
 ```r
 install.packages(c("rvest", "dplyr", "readxl", "writexl", "jsonlite", "httr"))
 ```
-
-## Usage
-
-1. **Prepare your Input File:**  
-   Create a CSV (or Excel) file containing a list of plant name or phytochemical names (if available) or identifiers. For example, your CSV file might include a column named `PhytochemicalName`.
-
-2. **Configure the Script:**  
-   - Modify the input file path in the script.
-   - Set the base URL pattern for the target website.
-   - Adjust the CSS selectors used to extract the SMILES string and Lipinski properties (e.g., if the SMILES are found in an element with a specific class or if the property values are in a table with a particular id).
-   - If any JSON data is returned by the website, use **jsonlite** to parse it.
-
-3. **Run the Script:**  
-   Execute the R script. The script will loop through each phytochemical, scrape the necessary details, and save the combined results to an output file.
-
-# Modify: 
-- The **base URL** to match the target website.
-- The **CSS selectors** (e.g., `.smiles`, `#lipinski-table`) to correctly target the desired elements.
-- The **property names** in the Lipinski table if they differ.
-- If the website returns any JSON data, you can use **jsonlite** to parse it:
->   ```r
->   json_data <- fromJSON(content)
->   ```
-- If you need to handle HTTP requests (for example, using API endpoints), the **httr** package can be helpful.
